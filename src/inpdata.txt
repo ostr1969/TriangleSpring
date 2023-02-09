@@ -1,0 +1,30 @@
+s predDirectory tpring6-25	*directory for predictive run
+d springStif 6	*spring stiffness
+d springAng -25	*sring start knee angle
+i predNumIterations 9000
+d LkneeAngleWeight 1.5
+s predOsimfile src/oneCont.osim
+i predDivisions 60
+d predVelocity 3
+d predConvergence 1e-3
+s predGuessFile tpring0-0/bred3_solution.sto
+d spring_Nm 0	*spring torque
+d clutchLowLimit 0
+i predIsGuess 1
+d newMass 59.56			*mass without exo for track and predrun
+d ContactStiff 5000000	*contact stiffnes for track and predrun
+d predMetWeight 0.1	*metabolic weight for spring run
+d springRelax 0.05
+d kneeTrackWeight 0
+d MuscleActConstant 0.015
+d MuscleDeactConstant 0.06
+d predTrackWeight 0.000	*tracking weight in the predictive run
+d trackSpeedWeight 6
+d trackAngleWeight 2
+d MuscleContractionVel 15
+d EffortWeight 0 
+d tiplHightWeight 0
+d GroundForceWeight 0.000003
+
+d MuscleFactor 1
+d LowestTime 0.34
