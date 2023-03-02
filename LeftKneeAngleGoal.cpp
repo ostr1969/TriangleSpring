@@ -55,6 +55,9 @@ protected:
     void calcGoalImpl(
             const GoalInput& input, SimTK::Vector& cost) const override {
     cost[0]=input.integral;
+    //const OpenSim::TriangleSpring& tri=getModel().
+//	    getComponent<OpenSim::TriangleSpring>("/forceset/aca");
+  //  cost[1]=tri.computeTorque(input.state);
     }
 };
 
